@@ -1,6 +1,6 @@
 <template>
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-12 co-md-10 col-lg-9 col-xl-8">
             <div class="card mt-3">
                 <div class="card-header">Lista de historias medicas</div>
                 <div class="card-body">
@@ -9,11 +9,13 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Fecha de nacimiento</th>
-                                <th scope="col">Sexo</th>
-                                <th scope="col">Estatura</th>
-                                <th scope="col">Peso</th>
-                                <th scope="col">Acciones</th>
+                                <th scope="col" class="hide-info">
+                                    Fecha de nacimiento
+                                </th>
+                                <th scope="col" class="hide-info">Sexo</th>
+                                <th scope="col" class="hide-info">Estatura</th>
+                                <th scope="col" class="hide-info">Peso</th>
+                                <th scope="col" colspan="2">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -24,10 +26,23 @@
                                 >
                                     <th scope="row">{{ index + 1 }}</th>
                                     <td v-text="history.nombre"></td>
-                                    <td v-text="history.fecha_nacimiento"></td>
-                                    <td v-text="history.sexo"></td>
-                                    <td v-text="history.estatura"></td>
-                                    <td v-text="history.peso"></td>
+                                    <td class="hide-info">
+                                        <span
+                                            v-text="history.fecha_nacimiento"
+                                        ></span>
+                                    </td>
+                                    <td
+                                        class="hide-info"
+                                        v-text="history.sexo"
+                                    ></td>
+                                    <td
+                                        class="hide-info"
+                                        v-text="history.estatura"
+                                    ></td>
+                                    <td
+                                        class="hide-info"
+                                        v-text="history.peso"
+                                    ></td>
                                     <td>
                                         <button
                                             type="button"
@@ -40,6 +55,8 @@
                                         >
                                             ver
                                         </button>
+                                    </td>
+                                    <td>
                                         <button
                                             type="button"
                                             class="btn btn-danger"
@@ -124,3 +141,13 @@ export default {
     },
 };
 </script>
+<style scoped>
+.hide-info {
+    display: none;
+}
+@media (min-width: 768px) {
+    .hide-info {
+        display: table-cell;
+    }
+}
+</style>

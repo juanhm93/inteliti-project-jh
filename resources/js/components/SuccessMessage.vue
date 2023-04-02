@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-8 mt-3">
+    <div class="col-12 col-md-11 col-lg-10 col-xl-9 mt-3">
         <div class="alert alert-info" role="alert">
             <div class="d-flex justify-content-between">
                 <h5 class="alert-heading">Paciente Registrado!</h5>

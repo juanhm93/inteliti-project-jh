@@ -216,7 +216,7 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "col-md-8 mt-3"
+    staticClass: "col-12 col-md-11 col-lg-10 col-xl-9 mt-3"
   }, [_c("div", {
     staticClass: "alert alert-info",
     attrs: {
@@ -262,7 +262,7 @@ var render = function render() {
   return _c("div", {
     staticClass: "row justify-content-center"
   }, [_c("div", {
-    staticClass: "col-md-8"
+    staticClass: "col-12 col-md-11 col-lg-10 col-xl-9"
   }, [_c("div", {
     staticClass: "card mt-3"
   }, [_c("div", {

@@ -1,6 +1,6 @@
 <template>
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-12 col-md-11 col-lg-10 col-xl-9">
             <div class="card mt-3">
                 <div class="card-header">
                     Ingresar historia medica del paciente
