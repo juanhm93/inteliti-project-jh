@@ -39,10 +39,9 @@
                                         class="hide-info"
                                         v-text="history.estatura"
                                     ></td>
-                                    <td
-                                        class="hide-info"
-                                        v-text="history.peso"
-                                    ></td>
+                                    <td class="hide-info">
+                                        {{ history.peso.toFixed(2) }}
+                                    </td>
                                     <td>
                                         <button
                                             type="button"

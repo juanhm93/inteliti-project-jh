@@ -23,7 +23,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="fw-bold">Peso</div>
-                            {{ patient.peso }}
+                            {{ patient.peso.toFixed(2) }}
                         </li>
                     </ul>
                 </div>

@@ -240,11 +240,8 @@ var render = function render() {
         textContent: _vm._s(history.estatura)
       }
     }), _vm._v(" "), _c("td", {
-      staticClass: "hide-info",
-      domProps: {
-        textContent: _vm._s(history.peso)
-      }
-    }), _vm._v(" "), _c("td", [_c("button", {
+      staticClass: "hide-info"
+    }, [_vm._v("\n                                    " + _vm._s(history.peso.toFixed(2)) + "\n                                ")]), _vm._v(" "), _c("td", [_c("button", {
       staticClass: "btn btn-primary",
       attrs: {
         type: "button"

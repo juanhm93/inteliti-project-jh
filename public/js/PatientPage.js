@@ -92,7 +92,7 @@ var render = function render() {
     staticClass: "list-group-item"
   }, [_c("div", {
     staticClass: "fw-bold"
-  }, [_vm._v("Peso")]), _vm._v("\n                        " + _vm._s(_vm.patient.peso) + "\n                    ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Peso")]), _vm._v("\n                        " + _vm._s(_vm.patient.peso.toFixed(2)) + "\n                    ")])])]), _vm._v(" "), _c("div", {
     staticClass: "card-footer text-muted"
   }, [_vm._v("\n                Paciente creado " + _vm._s(_vm.created) + "\n            ")])]), _vm._v(" "), _c("div", {
     staticClass: "col-md-8 mt-3"
